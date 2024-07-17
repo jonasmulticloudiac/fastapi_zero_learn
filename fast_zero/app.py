@@ -1,5 +1,6 @@
-from fastapi import FastAPI
 from http import HTTPStatus
+
+from fastapi import FastAPI
 from fastapi.responses import HTMLResponse
 
 app = FastAPI()
@@ -11,7 +12,7 @@ def read_root():
 
 
 @app.get('/livro', response_class=HTMLResponse)
-def read_root():
+def read_livro():
     return """
     <html>
       <head>
